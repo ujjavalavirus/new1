@@ -41,12 +41,17 @@ if(!isset($_SESSION['user'])){
 
 			<div class="contact_desgin">
 				<ul>
-					<li><span class="contactsname">Naveen</span><span class="contactsnumber">9191234598</span></li>
-					<li><span class="contactsname">Naveen</span><span class="contactsnumber">9191234598</span></li>
+					<li><span class="contactsname">Naveen</span><span class="contactsnumber">9191234598</span>
+						<div style="clear:both;"></div>
+					</li>
+					<li><span class="contactsname">Naveen</span><span class="contactsnumber">9191234598</span>
+						<div style="clear:both;"></div>
+					</li>
 				</ul>
 			</div>
 
 		</div>
+		<div style="clear:both;"></div>
 
 	</div>
 	<script type="text/javascript" src="js/script.js"></script>	

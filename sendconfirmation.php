@@ -22,7 +22,7 @@ if(!isset($_SESSION['user'])){
 		<div class="logout">
 			<a href="logout.php">Logout</a>
 		</div>
-		<div class="messagesending">
+		<div class="messagesending2">
 
 			<p>Your message is send successfully.</p>
 			<br/>
