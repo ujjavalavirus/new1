@@ -32,10 +32,10 @@ if(!isset($_SESSION['user'])){
 					<p><input type="tel" name="sendermobileno" maxlength="10" placeholder="Mobile No"  id="sendermobileno"/></p>
 				</div>
 				<div>
-					<textarea name="sendermessage" id="sendermessage" rows="10" cols="39"></textarea>
+					<textarea onkeypress="messagelength()" maxlength="140" name="sendermessage" id="sendermessage" rows="10" cols="39"></textarea>
 				</div>
 				<div>
-					<input type="submit" value="Send" name="messagesend" id="messagesend"/>
+					<input type="text" value="140" id="messagecount" /><input type="submit" value="Send" name="messagesend" id="messagesend"/>
 				</div>
 			</form>
 
@@ -67,6 +67,7 @@ if(!isset($_SESSION['user'])){
 		<div style="clear:both;"></div>
 
 	</div>
+	<script type="text/javascript" src="js/jquery.js"></script>	
 	<script type="text/javascript" src="js/script.js"></script>	
 </body>
 </html>

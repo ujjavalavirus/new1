@@ -33,3 +33,9 @@ input[type="submit"]{height: 30px; width: 150px; border-radius:5px; margin:8px a
 	.messagesent li .col2{width:700px;}
 	.messagesent li .col3{width:200px;}
 	.backstep .button{text-decoration: none;color:#000; background:#999; padding: 4px 10px;}
+	.contact_desgin li{cursor: pointer;}
+	#messagecount{width:30px;
+		height:20px;padding:4px;border-radius:4px; margin:4px 8px 0px 0px;}
+
+
+
