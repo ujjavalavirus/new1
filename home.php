@@ -22,6 +22,9 @@ if(!isset($_SESSION['user'])){
 		<div class="logout">
 			<a href="logout.php">Logout</a>
 		</div>
+		<div>
+			<a class="button" href="sended.php">Sent Box</a>
+		</div>
 		<div class="messagesending">
 
 			<form action="messagesend.php" method="POST" autocomplete="off">
@@ -41,12 +44,22 @@ if(!isset($_SESSION['user'])){
 
 			<div class="contact_desgin">
 				<ul>
-					<li><span class="contactsname">Naveen</span><span class="contactsnumber">9191234598</span>
-						<div style="clear:both;"></div>
-					</li>
-					<li><span class="contactsname">Naveen</span><span class="contactsnumber">9191234598</span>
-						<div style="clear:both;"></div>
-					</li>
+					<?php 
+					$userid = $_SESSION['user'];
+					$contactquery = "SELECT * FROM usercontact WHERE contact_userid = '$userid'";
+					$contactresult  = $connection->myquery($contactquery);
+					while($contact = mysqli_fetch_array($contactresult)){
+						?>		
+						<li><span class="contactsname"><?php echo $contact['contact_name']; ?></span>
+							<span class="contactsnumber"><?php echo $contact['contact_no']; ?></span>
+							<div style="clear:both;"></div>
+						</li>
+						<?php
+
+					}
+
+					?>
+					
 				</ul>
 			</div>
 

@@ -7,7 +7,7 @@ if(isset($_POST['userpassword'])){
 	
 
 	$useremail = $_POST['username'];
-	$userpassword = $_POST['userpassword'];
+	$userpassword = md5($_POST['userpassword']);
 
 	$currentquery = "SELECT * FROM logintable WHERE login_email='$useremail' AND login_password='$userpassword'";
 
@@ -52,6 +52,12 @@ if(isset($_POST['userpassword'])){
 				</div>
 				<div>
 					<p><input type="submit" value="Signin" name="usersubmit" id="usersubmit"/></p>
+
+
+				</div>
+				<div>
+					<a class="button" href="forgetpassword.php">Forget Password ?</a>
+					<a class="button" href="signup.php">Signup</a>
 				</div>
 			</form>
 		</div>
