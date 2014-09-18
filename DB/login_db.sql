@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 18, 2014 at 12:51 PM
+-- Generation Time: Sep 18, 2014 at 02:24 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -57,7 +57,7 @@ CREATE TABLE IF NOT EXISTS `messagelist` (
   `message_text` varchar(200) NOT NULL,
   `message_datetime` varchar(100) NOT NULL,
   PRIMARY KEY (`message_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
 
 --
 -- Dumping data for table `messagelist`
@@ -71,7 +71,10 @@ INSERT INTO `messagelist` (`message_id`, `messageuser_id`, `message_no`, `messag
 (5, 1, 2147483647, 'this thsdf hsdf hsfd hsf hsfd hsdf hsdfdsf', '1410956114'),
 (6, 9, 2147483647, 'user 2 testing ', '1410956227'),
 (8, 9, 2147483647, 'sfdfsdfsfsdf', '1410956481'),
-(9, 9, 2147483647, 'sfdsfsfdsf sfds dfsd sdf sf sdfsdfd sdf sdf dsf', '1410956525');
+(9, 9, 2147483647, 'sfdsfsfdsf sfds dfsd sdf sf sdfsdfd sdf sdf dsf', '1410956525'),
+(10, 9, 1234567890, 'thsusdf hsdf shsdf hdsf hsfd sdhsdf shdfsd', '1411038710'),
+(11, 9, 1131331313, 'this hsis is shsf hsf sdfhsd fshsdf sfhsfd sfdhsdf sdfhsf sdfhsdf sdfhsdf sdfhsf sdfhsdf hsdf sdfhsdf hsdf sdh sfhsdf shdf sfdhsf sdfhsdf shfdsdf sfd', '1411038746'),
+(12, 9, 1111111111, 'dcdcfvgg  sfsf sdfsdfsdf sdfsdfsdf sdfsdfsdf sdf sdfsdf sdf sdf sdf sdf   sdfsdfsfsds sdfsfsdfsdf  dsf', '1411038768');
 
 -- --------------------------------------------------------
 
