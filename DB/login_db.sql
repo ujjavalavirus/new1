@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 17, 2014 at 03:02 PM
+-- Generation Time: Sep 18, 2014 at 12:51 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -30,17 +30,19 @@ CREATE TABLE IF NOT EXISTS `logintable` (
   `login_id` int(100) NOT NULL AUTO_INCREMENT,
   `login_email` varchar(100) NOT NULL,
   `login_password` varchar(100) NOT NULL,
+  `login_name` varchar(100) NOT NULL,
+  `login_mobile` varchar(100) NOT NULL,
+  `login_city` varchar(100) NOT NULL,
+  `login_state` varchar(100) NOT NULL,
   PRIMARY KEY (`login_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
 
 --
 -- Dumping data for table `logintable`
 --
 
-INSERT INTO `logintable` (`login_id`, `login_email`, `login_password`) VALUES
-(1, 'ujjaval@inkoniq.com', 'inkoniq'),
-(2, 'ujjs@dsfds.com', 'dfsdfsfsdf'),
-(3, 'sdfsdf@dfds.com', 'sdfsdfwerwer');
+INSERT INTO `logintable` (`login_id`, `login_email`, `login_password`, `login_name`, `login_mobile`, `login_city`, `login_state`) VALUES
+(9, 'ujjaval@inkoniq.com', 'a809c59c5bf583b3486b93a138569b3f', 'ujjaval', '8884201471', 'bangalore', 'karnataka');
 
 -- --------------------------------------------------------
 
@@ -67,10 +69,9 @@ INSERT INTO `messagelist` (`message_id`, `messageuser_id`, `message_no`, `messag
 (3, 0, 2147483647, 'this is test', '1410956051'),
 (4, 0, 2147483647, 'rhh hsdf hsfsdf', '1410956061'),
 (5, 1, 2147483647, 'this thsdf hsdf hsfd hsf hsfd hsdf hsdfdsf', '1410956114'),
-(6, 2, 2147483647, 'user 2 testing ', '1410956227'),
-(7, 2, 0, '', '1410956463'),
-(8, 2, 2147483647, 'sfdfsdfsfsdf', '1410956481'),
-(9, 2, 2147483647, 'sfdsfsfdsf sfds dfsd sdf sf sdfsdfd sdf sdf dsf', '1410956525');
+(6, 9, 2147483647, 'user 2 testing ', '1410956227'),
+(8, 9, 2147483647, 'sfdfsdfsfsdf', '1410956481'),
+(9, 9, 2147483647, 'sfdsfsfdsf sfds dfsd sdf sf sdfsdfd sdf sdf dsf', '1410956525');
 
 -- --------------------------------------------------------
 
@@ -84,7 +85,33 @@ CREATE TABLE IF NOT EXISTS `usercontact` (
   `contact_name` varchar(100) NOT NULL,
   `contact_no` varchar(100) NOT NULL,
   PRIMARY KEY (`contact_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=23 ;
+
+--
+-- Dumping data for table `usercontact`
+--
+
+INSERT INTO `usercontact` (`contact_id`, `contact_userid`, `contact_name`, `contact_no`) VALUES
+(1, 1, 'naveen', '8787878787'),
+(2, 1, 'naveen k', '8989898989'),
+(3, 9, 'jash', '8787878728'),
+(6, 9, 'jashsi', '1234567890'),
+(7, 9, 'uj', '23234323243'),
+(8, 9, 'werwrw', '234324242'),
+(9, 9, 'uj', '23234323243'),
+(10, 9, 'werwrw', '234324242'),
+(11, 9, 'deddes', '1234567890'),
+(12, 9, 'awasqwsa', '1234567890'),
+(13, 9, 'deddes', '1234567890'),
+(14, 9, 'awasqwsa', '1234567890'),
+(15, 9, 'sefas', '121212121212'),
+(16, 9, 'sdfasf ', '1234567890'),
+(17, 9, 'tes', '1234567890'),
+(18, 9, 'tests', '1234567890'),
+(19, 9, 'tests', '1234567890'),
+(20, 9, 'reds', '1234567890'),
+(21, 9, 'tests', '1234567890'),
+(22, 9, 'reds', '1234567890');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
